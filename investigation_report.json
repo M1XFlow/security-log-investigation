@@ -1,0 +1,115 @@
+{
+    "firewall": {
+        "non_blank_lines": 899,
+        "blank_lines": 1,
+        "valid_events": 893,
+        "malformed_lines": 6,
+        "allowed": 522,
+        "blocked": 371,
+        "unique_source_ips": 203,
+        "top_blocked_ips": [
+            [
+                "203.0.113.55",
+                78
+            ],
+            [
+                "203.0.113.77",
+                23
+            ],
+            [
+                "198.51.100.77",
+                22
+            ],
+            [
+                "203.0.113.90",
+                20
+            ],
+            [
+                "192.168.1.34",
+                5
+            ]
+        ],
+        "top_targeted_ports": [
+            [
+                "443",
+                104
+            ],
+            [
+                "8080",
+                100
+            ],
+            [
+                "80",
+                94
+            ],
+            [
+                "993",
+                90
+            ],
+            [
+                "123",
+                87
+            ]
+        ]
+    },
+    "authentication": {
+        "non_blank_lines": 519,
+        "blank_lines": 1,
+        "valid_events": 517,
+        "malformed_lines": 2,
+        "successful_logins": 314,
+        "failed_logins": 164,
+        "account_locks": 5,
+        "logouts": 33,
+        "unknown_events": 1,
+        "top_failed_login_ips": [
+            [
+                "198.51.100.23",
+                46
+            ],
+            [
+                "203.0.113.55",
+                20
+            ],
+            [
+                "203.0.113.77",
+                17
+            ],
+            [
+                "192.168.1.20",
+                4
+            ],
+            [
+                "192.168.1.30",
+                3
+            ]
+        ],
+        "top_targeted_usernames": [
+            [
+                "admin",
+                52
+            ],
+            [
+                "svc_backup",
+                28
+            ],
+            [
+                "root",
+                15
+            ],
+            [
+                "bob",
+                14
+            ],
+            [
+                "carol",
+                14
+            ]
+        ]
+    },
+    "security_observations": [
+        "The highest number of failed logins came from 198.51.100.23, with 46 attempts. This activity should be investigated.",
+        "The most frequently targeted username was admin, with 52 failed login attempts.",
+        "The highest number of blocked firewall events came from 203.0.113.55, with 78 events."
+    ]
+}
